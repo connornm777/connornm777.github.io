@@ -1,20 +1,44 @@
 <html>
-  <body>
-    <h1>Comment Section</h1>
-    <form action="comments.php" method="post">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="comment">Comment:</label><br>
-      <textarea id="comment" name="comment"></textarea><br><br>
-      <input type="submit" value="Submit">
-    </form> 
-<nav>
-  <ul>
-    <li><a href="comments.html">Comments</a></li>
-    <li><a href="clickprize.html">Clickprize</a></li>
-  </ul>
-</nav>
+<head>
+    <title>Twitter Clone</title>
+</head>
+<body>
+    <h1>Twitter Clone</h1>
 
-  </body>
+    <form>
+        <textarea name="post" rows="4" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Post">
+    </form>
+
+    <h2>Recent Posts</h2>
+    <div id="posts">
+        <!-- Posts will be added here dynamically -->
+    </div>
+
+    <script>
+        // Get a reference to the form and the post container
+        const form = document.querySelector('form');
+        const postsContainer = document.querySelector('#posts');
+
+        // Add a submit event listener to the form
+        form.addEventListener('submit', (event) => {
+            // Stop the form from submitting (default behavior)
+            event.preventDefault();
+
+            // Get the post text from the textarea
+            const postText = event.target.elements.post.value;
+
+            // Create a new div element to hold the post
+            const postElement = document.createElement('div');
+
+            // Add the post text to the post element
+            postElement.innerHTML = postText;
+
+            // Add the post element to the page
+            postsContainer.appendChild(postElement);
+        });
+    </script>
+</body>
 </html>
 
