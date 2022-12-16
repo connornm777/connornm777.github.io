@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h1>CLICK 5 TIMES TO WIN A PRIZE</h1>
+<h1>CLICK 3 TIMES TO WIN A PRIZE</h1>
 
 <style>
     /* Center the header */
@@ -105,7 +105,7 @@
             // Update the button's position
             button.style.left = x + "px";
             button.style.top = y + "px";
-        }, 500);
+        }, 1000);
 
         // Set up the counter
         let count = 0;
@@ -116,7 +116,7 @@
             counter.innerText = "Number of clicks: " + count;
 
             // If the count reaches 5, redirect to another site
-            if (count === 5) {
+            if (count === 3) {
                 location.replace("https://rebrand.ly/r1ckr0l13r");
             }
         });
