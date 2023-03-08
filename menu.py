@@ -10,7 +10,6 @@ pattern = r'<button[^>]*>.*?</button>\n'
 menu = """
 <html>
 <button><a href="index.html">Home</a></button>
-<button><a href="family.html">Family</a></button>
 <button><a href="bookreviews.html">Book Reviews</a></button>
 <button><a href="research.html">Research</a></button>
 <button><a href="games.html">Games</a></button>
