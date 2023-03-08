@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h1>CLICK 5 TIMES TO WIN A PRIZE</h1>
+
+<style>
+    /* Center the header */
+    h1 {
+        text-align: center;
+    }
+
+    /* Add a flashing animation to the header */
+    h1 {
+        animation: flash 1s linear infinite;
+    }
+    @keyframes flash {
+        0% {
+            color: black;
+        }
+        50% {
+            color: white;
+        }
+        100% {
+            color: black;
+        }
+    }
+
+    /* Add a jumping animation to the header */
+    h1 {
+        animation: jump 1s ease-in-out infinite;
+    }
+    @keyframes jump {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* Add a color-changing animation to the header */
+    h1 {
+        animation: color-change 5s linear infinite;
+    }
+    @keyframes color-change {
+        0% {
+            color: red;
+        }
+        20% {
+            color: orange;
+        }
+        40% {
+            color: yellow;
+        }
+        60% {
+            color: green;
+        }
+        80% {
+            color: blue;
+        }
+        100% {
+            color: purple;
+        }
+    }
+
+    /* Add all of the animations to the header simultaneously */
+    h1 {
+        animation: flash 1s linear infinite,
+                  jump 1s ease-in-out infinite,
+                  color-change 5s linear infinite;
+    }
+</style>
+
+
+    <button id="moving-button">Click me!</button>
+    <p id="counter">Number of clicks: 0</p>
+
+    <style>
+        /* Add styles for the button and counter */
+        #moving-button {
+            position: absolute;
+            background-color: red;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        #counter {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        // Set up the moving button
+        const button = document.getElementById("moving-button");
+        setInterval(() => {
+            // Generate random x and y positions within the bounds of the screen
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+
+            // Update the button's position
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }, 800);
+
+        // Set up the counter
+        let count = 0;
+        const counter = document.getElementById("counter");
+        button.addEventListener("click", () => {
+            // Increment the count and update the counter
+            count++;
+            counter.innerText = "Number of clicks: " + count;
+
+            // If the count reaches 5, redirect to another site
+            if (count === 5) {
+                location.replace("https://rebrand.ly/r1ckr0l13r");
+            }
+        });
+    </script>
+
+
+</body>
+</html>
+
