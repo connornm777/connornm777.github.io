@@ -81,49 +81,41 @@ font-weight: bold;
 }
 </style>
 </head>
-
 <button id="moving-button"></button>
 <script>
-  // Set up the moving button
-  const button = document.getElementById("moving-button");
-  // scaling factor	
-  const s = 1.4;
-  // Set up the counter
-  let count = 0;
-  setInterval(() => {
-    // Generate random x and y positions within the bounds of the screen
-    const x = (Math.random() + 0.5 * (s - 1)) * window.innerWidth / s;
-    const y = (Math.random() + 0.5 * (s - 1)) * window.innerHeight / s;
-    // Update the button's position
-    button.style.left = x + "px";
-    button.style.top = y + "px";
-  }, 600);
-
-  const counter = document.getElementById("counter");
-  button.addEventListener("click", () => {
-    // Increment the count and update the counter
-    count++;
-    const x = (Math.random() + 0.5 * (s - 1)) * window.innerWidth / s;
-    const y = (Math.random() + 0.5 * (s - 1)) * window.innerHeight / s;
-    // Update the button's position
-    button.style.left = x + "px";
-    button.style.top = y + "px";
-    counter.innerText = "Number of clicks: " + count;
-    // If the count reaches 5, redirect to another site
-    if (count === 5) {
-      location.href = "https://rebrand.ly/r1ckr0l13r";
-    }
-  });
+document.addEventListener("DOMContentLoaded", function() {
+// Set up the moving button
+const button = document.getElementById("moving-button");
+const s = 1.4;
+let count = 0;
+setInterval(() => {
+const x = (Math.random() + 0.5 * (s - 1)) * window.innerWidth / s;
+const y = (Math.random() + 0.5 * (s - 1)) * window.innerHeight / s;
+button.style.left = x + "px";
+button.style.top = y + "px";
+}, 600);
+const counter = document.getElementById("counter");
+button.addEventListener("click", () => {
+count++;
+const x = (Math.random() + 0.5 * (s - 1)) * window.innerWidth / s;
+const y = (Math.random() + 0.5 * (s - 1)) * window.innerHeight / s;
+button.style.left = x + "px";
+button.style.top = y + "px";
+counter.innerHTML = "Number of clicks: " + count;
+if (count === 5) {
+location.href = "https://rebrand.ly/r1ckr0l13r";
+}
+});
+});
 </script>
-
 <body>
+<!--begin menu-->
 <button><a href="index.html">Home</a></button>
 <button><a href="bookreviews.html">Book Reviews</a></button>
 <button><a href="research.html">Research</a></button>
 <button><a href="games.html">Games</a></button>
 <button><a href="misc.html">Misc</a></button>
-
-
+<!--end menu-->
 <audio autoplay>
 <source src="audio/pushittothelimit.mp3" type="audio/mpeg">
 </audio>
