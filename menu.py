@@ -10,7 +10,10 @@ pattern = r'<!--begin menu-->[\s\S]*?<!--end menu-->'
 menu = """
 <!--begin menu-->
 <button><a href="index.html">Home</a></button>
+<button><a href="about.html">About</a></button>
 <button><a href="physics.html">Physics</a></button>
+<!-- <button><a href="economics.html">Economics</a></button> -->
+<!-- <button><a href="politics.html">Politics</a></button> -->
 <button><a href="games.html">Games</a></button>
 <button><a href="bookreviews.html">Book Reviews</a></button>
 <button><a href="misc.html">Misc</a></button>
