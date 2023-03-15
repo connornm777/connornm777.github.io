@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<!--begin menu-->
+<button><a href="index.html">Home</a></button>
+<button><a href="about.html">About</a></button>
+<button><a href="research.html">Physics</a></button>
+<button><a href="posts.html">Economics</a></button> 
+<button><a href="games.html">Games</a></button>
+<button><a href="misc.html">Misc</a></button>
+<!--end menu-->
+<body>
+<h1>Widget Inc.</h1>
+<table>
+<tr>
+<td><button onclick="decrement(1)">-</button></td>
+<td><button onclick="increment(1)">+</button></td>
+<td><span id="count1">0</span></td>
+</tr>
+<tr>
+<td><button onclick="decrement(2)">-</button></td>
+<td><button onclick="increment(2)">+</button></td>
+<td><span id="count2">0</span></td>
+</tr>
+<tr>
+<td><button onclick="decrement(3)">-</button></td>
+<td><button onclick="increment(3)">+</button></td>
+<td><span id="count3">0</span></td>
+</tr>
+<tr>
+<td><button onclick="decrement(4)">-</button></td>
+<td><button onclick="increment(4)">+</button></td>
+<td><span id="count4">0</span></td>
+</tr>
+<tr>
+<td><button onclick="decrement(5)">-</button></td>
+<td><button onclick="increment(5)">+</button></td>
+<td><span id="count5">0</span></td>
+</tr>
+<tr>
+<td><button onclick="decrement(6)">-</button></td>
+<td><button onclick="increment(6)">+</button></td>
+<td><span id="count6">0</span></td>
+</tr>
+<tr>
+<td><button onclick="decrement(7)">-</button></td>
+<td><button onclick="increment(7)">+</button></td>
+<td><span id="count7">0</span></td>
+</tr>
+<tr>
+<td><button onclick="decrement(8)">-</button></td>
+<td><button onclick="increment(8)">+</button></td>
+<td><span id="count8">0</span></td>
+</tr>
+<tr>
+<td><button onclick="decrement(9)">-</button></td>
+<td><button onclick="increment(9)">+</button></td>
+<td><span id="count9">0</span></td>
+</tr>
+</table>
+<script>
+var count1 = 0;
+var count2 = 0;
+var count3 = 0;
+var count4 = 0;
+var count5 = 0;
+var count6 = 0;
+var count7 = 0;
+var count8 = 0;
+var count9 = 0;
+function increment(n) {
+// Increment the appropriate counter
+switch (n) {
+case 1:
+count1++;
+document.getElementById("count1").innerHTML = count1;
+break;
+case 2:
+count2++;
+document.getElementById("count2").innerHTML = count2;
+break;
+case 3:
+count3++;
+document.getElementById("count3").innerHTML = count3;
+break;
+case 4:
+count4++;
+document.getElementById("count4").innerHTML = count4;
+break;
+case 5:
+count5++;
+document.getElementById("count5").innerHTML = count5;
+break;
+case 6:
+count6++;
+document.getElementById("count6").innerHTML = count6;
+break;
+case 7:
+count7++;
+document.getElementById("count7").innerHTML = count7;
+break;
+case 8:
+count8++;
+document.getElementById("count8").innerHTML = count8;
+break;
+case 9:
+count9++;
+document.getElementById("count9").innerHTML = count9;
+break;
+}
+}
+function decrement(n) {
+// Increment the appropriate counter
+switch (n) {
+case 1:
+count1--;
+document.getElementById("count1").innerHTML = count1;
+break;
+case 2:
+count2--;
+document.getElementById("count2").innerHTML = count2;
+break;
+case 3:
+count3--;
+document.getElementById("count3").innerHTML = count3;
+break;
+case 4:
+count4--;
+document.getElementById("count4").innerHTML = count4;
+break;
+case 5:
+count5--;
+document.getElementById("count5").innerHTML = count5;
+break;
+case 6:
+count6--;
+document.getElementById("count6").innerHTML = count6;
+break;
+case 7:
+count7--;
+document.getElementById("count7").innerHTML = count7;
+break;
+case 8:
+count8--;
+document.getElementById("count8").innerHTML = count8;
+break;
+case 9:
+count9--;
+document.getElementById("count9").innerHTML = count9;
+break;
+}
+}
+</script>
+</body>
+</html>
+
