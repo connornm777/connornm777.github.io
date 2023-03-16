@@ -2,7 +2,7 @@
 import os, re, sys
 
 # The names of the blocks of code to be added to each html file
-blocks = {'menu', 'style', 'comments', 'mathjax'}
+blocks = {'menu', 'comments', 'mathjax'}
 pattern = {}
 content = {}
 
@@ -10,16 +10,16 @@ content = {}
 # Define regular expression pattern to match for finding and replacing the html blocks, and load content
 for block in blocks:
   pattern[block] =  r'<!--begin '+block+'-->[\s\S]*?<!--end '+block+'-->'
-  block_file = open('global/html/'+block+'.html', 'r') 
+  block_file = open('html/global/'+block+'.html', 'r') 
   content[block] = '<!--begin '+block+'-->'+block_file.read()+'<!--end '+block+'-->'
   block_file.close()
 
 
 # Loop through all HTML files in the current directory
-for filename in os.listdir():
+for filename in os.listdir('html/'):
   if filename.endswith('.html'):
       # Open the file for reading
-      with open(filename, 'r') as page_file:
+      with open('html/'+filename, 'r') as page_file:
           # Read the file contents
           file_content = page_file.read()
           for block in blocks:
@@ -32,5 +32,5 @@ for filename in os.listdir():
           file_content=re.sub(r"^\s+", "", file_content, flags = re.MULTILINE)
           file_content += "\n"
       # Open the file for writing and overwrite the old contents
-      with open(filename, 'w') as f:
-          f.write(file_content)
+      with open('html/'+filename, 'w') as page_file:
+          page_file.write(file_content)
