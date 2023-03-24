@@ -1,4 +1,5 @@
-#usage: python3 publish_post.py [html-post]
+#FIRST MOVE HTML FILE FROM DRAFTS TO MAIN HTML FOLDER, THEN RUN THIS SCRIPT
+#usage: python3 publish_post.py [html/post]
 
 import os, re, sys
 from datetime import datetime
