@@ -29,8 +29,10 @@ went into the coat commands some amount of wool, and this extra leverage command
 Owners who profit then must somehow be exploiting labor by capturing some "surplus value". 
 </p>
 <p>
-The crucial mistake made by Marx is that not <em>all</em> value is derived from labor. 
-Consider a coat factory that spends \(L\) amount on labor, and \(X\) amount on all expenses that aren't labor (land, machines, sheep, ect)<a href="#footnote-1">[1]</a>. 
+I do not intend to have a long semantic debate about defining "value". 
+But it can be shown that profits must come from exploiting labor is in general incorrect. 
+Consider a coat factory that spends \(L\) amount on labor, 
+and \(X\) amount on all expenses that aren't labor (land, machines, sheep, ect)<a href="#footnote-1">[1]</a>. 
 It's revenue is surely a function of these two input \(R(L, X)\), and it's profits would be:
 </p>
 $$P(L,X)=R(L,X)-L-X$$
@@ -64,7 +66,7 @@ $$P(2L, 2X)-P(2L,X) = R(2L, 2X) - R(2L, X) - X > 0 ?$$
 <p>
 If our orginal profits were positive, then it is easy to see that \(P(2L, 2X)-P(L, X) > 0 \), and the net profits from doubling both \(X\) and \(L\) increases profits. 
 But how does doubling labor alone effect profits?
-The condition for doubling the labor to be profitable can be seen to be:
+The condition for doubling the labor to be profitable is seen to be:
 </p>
 
 $$ R(2L, X) - R(L, X) > L $$
@@ -78,16 +80,18 @@ then more workers at the same wage means more surplus labor value is extracted a
 <h3> The form of \(R(L, X)\) </h3>
 
 <p>
-More specific analysis can be done by choosing a form for \(R(L, X)\). 
+Now that I'm done jabbing at Marx, I can elaborate on my own speculations of functional forms.
 The revenue function of \(R(L, X)\) may take several possible forms, but should follow several constraints. 
 </p>
 
 <ol>
-<li> 
+
+<li>
 The revenue should be zero if either the labor, or all factors needed for labor to produce are zero (having no workers, or having workers stand in an empty room should both
 surely produce zero revenue):
 $$ R(0, X)=R(L, 0)=0 $$ 
 </li>
+
 
 <li> 
 The revenue should be monotonically increasing in both factors (more resources can't hurt revenue, at worst they can be discarded):
@@ -117,6 +121,7 @@ $$g(X)=bX$$
 
 <p>
 Where \(a\) and \(b\) are constants defined as the ratio of a revenue to a resource when not constrained by the other resource. 
+For profits to positive for some positive values of \(X\) and \(L\), both \(a\) and \(b\) must be greater than one.
 </p>
 
 <p>
@@ -125,6 +130,28 @@ A possible function (but not unique, though possibly simplest. Perhaps another c
 
 $$ R(L, X) = \frac{abLX}{aL+bX} $$
 
+<p>
+The profit function is then:
+</p>
+
+$$ P(L, X) = \frac{abLX}{aL+bX}-L-X $$
+
+<p>
+One can then solve for the range in which \(P(2L, X)-P(L,X) > 0\) and finds that doubling \(L\) increases profits when \(L\) obeys:
+</p>
+
+$$0 < L < \frac{b}{2a}\left(\sqrt{7+2a}-3\right)X $$
+
+<p>
+I wanted to test this toy model empirically, but unfortunately, the companies that are large and publicly traded whose expenses are easier to find
+are precisely those for which scale invariance and consumer non-saturation are bad assumptions. Additionally, this formula requires probing values of 
+\(a\) and \(b\), for which a good fit requires examples of companies operating at a range of values of profitability. 
+If anyone wants to run a business at a loss for an extended period of time to see how it fits this functional form I would very much 
+appreciate it.  
+</p>
+<p>
+Perhaps at a later date if I find a large dataset or way to scrape this information from a large number of businesses it can be tested. 
+</p>
 
 <p id="footnote-1">[1] One may object that allowing for the existence of \(X\) already assumes the negation of the labor theory of value, because maybe all of those 
 other items derive their value from labor. First, I would object that there exists value in land not created by labor, but even with that aside, from the point of view 
