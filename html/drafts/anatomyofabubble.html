@@ -3,15 +3,25 @@
 <head>
 <link href="../css/style.css" rel="stylesheet">
 <!--begin mathjax-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 <!--end mathjax-->
 </head>
 <body>
-<!--begin menu-->
+<!--begin menu--><nav>
+<ul class="menu">
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="posts.html">Posts</a></li>
+<li><a href="games.html">Games</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
 <!--end menu-->
 <div class="content">
 <!--begin content-->
 <h1>The Anatomy of a Bubble</h1>
-
 <p>
 Most people have some intuitive idea of what it means for something to be overpriced, or to be in a bubble.
 Value investors may try to independently calculate their own estimate of the value of an asset using fundamentals or
@@ -51,11 +61,56 @@ get a Fermi estimate.
 <li>Cumulative net worth of all those interested in buying asset</li>
 <li>Rate of information travel about asset</li>
 </ul>
+<p>
 I'd expect the cumulative net worth to be proportional to the peak price, and time the bubble last to by inversely proportional 
 to the rate of information travel in the market. Those things aren't usually directly measurable, but are guessable for a good ball-park reality check.
-But we can attempt to get more precise. 
+But we can attempt to get more precise and capture some dynamics in a toy model. 
+</p>
+<h2>Tulips</h2>
+<p>
+Let us consider a tulip market, where tulips are a fungible asset trading at a current particular price, \(P^*\). 
+The participants in this market will each have their own estimate of what tulips should really be worth, based on what they think future prices 
+will be and their own risk-adjusted calculations for opportunities to profit. Whatever goes into their reasoning, sound or faulty, we 
+may at any point in time say that their personal estimate \(P\) is such that if it is greater than the current trading price \(P\gt P^*\), they
+will want to buy tulips, and if it is lower \(P\lt P^*\), they will sell any tulips they can. 
+</p>
+<p>
+Each trader will also have some amount of money \(M\), and some amount of tulips \(T\). It will turn out that particpants who never buy or sell tulips 
+will not effect the price, so we can consider them non-participants. But for the participants, there exists a three variable distribution. 
+We will say that \(n(P, M, T)\) is the number of people who value tulips at \(P\), have 
+\(M\) dollars, and own \(T\) tulips. We can consider these continuous to account for small differences, and note that:
+
+$$\int_0^{\infty}dP\int_0^{\infty}dM\int_0^{\infty}dT \bigl(n(P,M,T)\bigr)=N$$
+
+Where \(N\) is the number of participants in the market. The total amount of money and tulips \(M_{\text{tot}}\) and \(T_{\text{tot}}\) 
+respectively, can also be calculated:
+
+$$\int_0^{\infty}dP\int_0^{\infty}dM\int_0^{\infty}dT \bigl(M n(P,M,T)\bigr)=M_{\text{tot}}$$
+$$\int_0^{\infty}dP\int_0^{\infty}dM\int_0^{\infty}dT \bigl(T n(P,M,T)\bigr)=T_{\text{tot}}$$
 <h2>Supply=Demand</h2>
-Let us use tulips as the example asset for our model. Let the price of a Tulip be $$T$$. 
+
+The number of tulips being sold on the market will be equal to the number of tulips owned by individuals whose personal estimate in value is lower than
+the current market price. This can be quantified by the integral:
+
+$$ Q_S(P^*)=\int_0^{P^*}dP\int_0^{\infty}dM\int_0^{\infty}dT\bigl(T n(P,M,T)\bigr)$$
+
+The number of tulips bought on the market will be equal to the amount of money owned by invidiuals whose estimate in value is higher than the 
+current market price, divided by the current market price. This can be quantified by the integral:
+
+
+$$ Q_D(P^*)=\frac{1}{P^*}\int_{P^*}^{\infty}dP\int_0^{\infty}dM\int_0^{\infty}dT\bigl(M n(P,M,T)\bigr)$$
+
+The number of tulips sold must be equal to the number of tulips bought. Therefore, we have the condition:
+
+$$ Q_S(P^*)=Q_D(P^*) $$
+$$ \implies \int_0^{P^*}dP\int_0^{\infty}dM\int_0^{\infty}dT\bigl(T n(P,M,T)\bigr)
+=\frac{1}{P^*}\int_{P^*}^{\infty}dP\int_0^{\infty}dM\int_0^{\infty}dT\bigl(M n(P,M,T)\bigr)$$
+
+The last equation is an implicit expression for how the price \(P^*\) depends on the distributions of wealth, supply of tulips, and beliefs
+about value among the population of market participants. In theory the price is a functional \(P^*[n]\) of this three variable distribution, 
+though it is by no means easy to isolate it and find a closed expression from the implicit equation. At the very least it can be 
+found computationally. 
+
 <h2>All Money is Overvalued</h2>
 <p>
 Perhaps the best example of an asset deriving it's value from this source of self-reference is money. Money has value mainly because 
@@ -74,7 +129,24 @@ trying to protect, the main differentiators between fiats and other bubbles is o
 </p>
 <!--end content-->
 </div>
-<!--begin comments-->
+<!--begin comments--><div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+var disqus_config = function () {
+this.page.url = "https://connornm777.github.io/anatomyofabubble.html";;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "anatomyofabubble"; // Replace $anatomyofabubble$ with page's unique identifier variable
+}; 
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://connornm777-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//connornm777-github-io.disqus.com/count.js" async></script>
 <!--end comments-->
 </body>
 </html>
