@@ -22,7 +22,17 @@
 <div class="content">
 <!--begin content-->
 <h1>Valuing Options</h1>
-$$ V_c = \int_{S_0}^{\infty} dS^{\prime} P(S^{\prime} | S)(S^{\prime}-S_0) $$
+<p>
+I found the arguments for option pricing using Black-Scholes or other models conceptually complicated and not well founded in the general case.
+I want to lay out simple reasoning that can capture broader phenomena, such as qualitative information about markets that can be captured in 
+a subjective Bayesian way, and reduces to the usual formulas when the assumptions are made explicitly.
+</p>
+
+<p>
+Consider a call option on an asset with current price $$S$$, a strike price of $$S_0$$, and expiration in time $$t$$, and no
+time value of money (or put the risk free rate at zero, updating this to include a non-zero risk free rate is relatively simple).
+</p>
+$$ V_c(S, S_0, t) = \int_{S_0}^{\infty} dS^{\prime} P_t(S^{\prime} | S)(S^{\prime}-S_0) $$
 <!--end content-->
 </div>
 <!--begin comments--><div id="disqus_thread"></div>
