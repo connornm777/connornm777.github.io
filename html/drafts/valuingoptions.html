@@ -57,9 +57,17 @@ $$ V_c = \int_{S_0}^{\infty} dS^{\prime} P(S^{\prime} | S)(S^{\prime}-S_0) $$
 Discrepencies between the market price of \(V_c\) and pricing due to a more informed estimation of \(P(S^\prime | S)\) indicate 
 oppurtunites to turn a profit (or a loss if the market does indeed have a more accurate forecast). 
 </p>
-<p>
 
+<h2>Black-Scholes Equation</h2>
+
+<p>
+The Black-Scholes equation makes \(P(S^\prime | S)\) depend on time explicitly, and assumes a distribution of the form:
 </p>
+
+$$ P_t(S^\prime | S)= \frac{1}{\sigma \sqrt{2\pi (T-t)}}\exp[-\frac{1}{\sigma^2(T-t)}\left(\log(S^\prime/S)-\mu(T-t)\right)^2] $$
+
+Where \(t\) is time, \(T\) is the time left until the option expires at \(t=0\), \(\sigma\) is the volatility  
+
 <!--end content-->
 </div>
 <!--begin comments--><div id="disqus_thread"></div>
