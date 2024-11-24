@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="../css/style.css" rel="stylesheet">
+<!--begin mathjax-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<!--end mathjax-->
+</head>
+<body>
+<!--begin menu--><nav>
+<ul class="menu">
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="posts.html">Posts</a></li>
+<li><a href="games.html">Games</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+<!--end menu-->
+<div class="content">
+<!--begin content-->
+<h1>Labor and Profits</h1>
+<p>
+Consider a coat factory that spends \(L\) amount on labor, 
+and \(X\) amount on all expenses that aren't labor (land, machines, sheep, ect).
+It's revenue is surely a function of these two input \(R(L, X)\), and it's profits would be:
+</p>
+$$P(L,X)=R(L,X)-L-X$$
+<p>
+If we were to create a clone of this factory, then we would simply double all these extensive variables. 
+In other words, if we imagine we have twice as much labor <em> and </em> twice as much of everything else that produces revenue and profits, then
+both our profits and revenue will double (ignoring network effects and economies of scale, and assuming the factory is small enough to not 
+satiate consumer demand)<a href="#footnote-1">[1]</a>.  
+</p>
+$$R(2L, 2X)=2R(L, X)$$
+$$\implies P(2L, 2X) = 2 P(L, X) $$
+<p>
+<p>
+The revenue must surely be a increasing function with respect to increasing \(L\) and \(X\), 
+because even in the worst case scenario where extra labor or other resources
+aren't needed, you can pay some workers to do nothing or scrap the leftover resources. This doesn't decrease revenue. We must therefore have: 
+</p>
+$$R(2L, 2X) > R(2L, X) > R(L, X) $$
+<p>
+The more resources, whether \(L\) or \(X\), the more revenue. 
+</p>
+<p>
+Whether profits are increased for each step is less clear. 
+</p>
+$$P(2L, X)-P(L,X) = R(2L, X) - R(L, X) - L > 0 ?$$
+$$P(2L, 2X)-P(2L,X) = R(2L, 2X) - R(2L, X) - X > 0 ?$$
+<p>
+If our orginal profits were positive, then it is easy to see that \(P(2L, 2X)-P(L, X) > 0 \), 
+and the net profits from doubling both \(X\) and \(L\) increases profits. 
+But how does doubling labor alone effect profits?
+The condition for doubling the labor to be profitable is seen to be:
+</p>
+$$ R(2L, X) - R(L, X) > L $$
+<p>
+Although we can assume that \(R(2L, X)\) is greater than \(R(L, X)\), we have no reason to assume that is greater than by an amount of at least \(L\). 
+This allows for situations where <em>more</em> workers hired at the same wage make profits <em>fall</em>. 
+One can imagine a factory that has a dearth of machinary of floorspace, and the approximate net effect of hiring another worker is pay another 
+salary for no appreciable increase in production or revenue.  
+</p>
+<h3> The form of \(R(L, X)\) </h3>
+<p>
+The revenue function of \(R(L, X)\) may take several possible forms, but should follow several constraints. 
+</p>
+<ol>
+<li>
+The revenue should be zero if either the labor, or all factors needed for labor to produce are zero (having no workers, or having workers stand in an empty room should both
+surely produce zero revenue):
+$$ R(0, X)=R(L, 0)=0 $$ 
+</li>
+<li> 
+The revenue should be monotonically increasing in both factors (more resources can't hurt revenue, at worst they can be discarded):
+$$ R(L+dL, X) > R(L, X)  $$
+$$ R(L, X+dX) > R(L, X) $$
+</li>
+<li>
+As noted before, the argument given by doubling all variables applies to changing the scale by any amount \(s\):
+$$R(sL, sX)=sR(L, X)$$
+</li>
+<li>
+If given a large enough amount of \(L\), further increases in \(L\) do not increase revenue, and similarly for large \(X\) (having a million workers and ten wool spinner means 
+revenue is going to depend much more on the change in number of wool spinners, and vice versa for the opposite situation). 
+$$ R(L, \infty) = f(L) $$
+$$ R(\infty, X) = g(X) $$
+</li>
+</ol>
+<p>
+Constraints 3 and 4 together force \(f(L)\) and \(g(X)\) to be linear:
+</p>
+$$f(L)=aL$$
+$$g(X)=bX$$
+<p>
+Where \(a\) and \(b\) are constants defined as the ratio of a revenue to a resource when not constrained by the other resource. 
+For profits to positive for some positive values of \(X\) and \(L\), both \(a\) and \(b\) must be greater than one.
+</p>
+<p>
+A possible function (but not unique, though possibly simplest. Perhaps another constraint is needed) for \(R(L, X)\) that satisfies all the criterea is:
+</p>
+$$ R(L, X) = \left(\frac{1}{aL}+\frac{1}{bX}\right)^{-1}= \frac{abLX}{aL+bX} $$
+<p>
+The profit function is then:
+</p>
+$$ P(L, X) = \frac{abLX}{aL+bX}-L-X $$
+<p>
+One can then solve for the range in which \(P(2L, X)-P(L,X) > 0\) and finds that doubling \(L\) increases profits when \(L\) obeys:
+</p>
+$$0 < L < \frac{b}{2a}\left(\sqrt{7+2a}-3\right)X $$
+<p>
+I wanted to test this toy model empirically, but unfortunately, the companies that are large and publicly traded whose expenses are easier to find
+are precisely those for which scale invariance and consumer non-saturation are bad assumptions. Additionally, this formula requires probing values of 
+\(a\) and \(b\), for which a good fit requires examples of companies operating at a range of values of profitability. 
+If anyone wants to run a business at a loss for an extended period of time to see how it fits this functional form I would very much 
+appreciate it.  
+Perhaps at a later date if I find a large dataset or way to scrape this information from a large number of businesses it can be tested. 
+</p>
+<p>
+Of course, one didn't have to break the expenses into just \(L\) and \(X\), although that was originally valuable to argue against the labor theory of 
+value. One could see that the logic of the constraints apply equally well to a number of expenses. 
+Consider \(N\) such factors each labeled by \(X_i\), we would then find the revenue as:
+</p>
+$$ R(X_1,\cdots,X_N) = \left(\sum_{i=1}^N \frac{1}{\alpha_i X_i}\right)^{-1} $$
+<p>
+Where \(\alpha_i\) is a constant associated with the rate of increase of revenue with factor \(X_i\) when not constrained by any other factor. 
+</p>
+<p>
+What's nice about this formula is that things that are abundant automatically drop out. If we considered the amount of air needed 
+to breath in the factory, and not just how much we pay for it (currently and hopefully in the future, nothing) then even though \(X_{\text{air}}\)
+is near zero, \(\alpha_{\text{air}}\) must be equal to the rate of increase in revenue divided by the price in air (near zero) so that the whole factor 
+is how much the otherwise unconstrained revenue is effected by the amount of air times that amount of air.  
+And assuming air is very abundant and workers can breath, then we don't even have to consider it. If the price is low too, we also don't have 
+to consider it's effect on the profits. 
+</p>
+$$ P(X_1,\cdots,X_N) = \left(\sum_{i=1}^N \frac{1}{\alpha_i X_i}\right)^{-1} - \sum_{i=1}^N X_i $$
+<p id="footnote-1">[1] This approximation is exact if you cloned the whole earth including the consumers and casually isolated the systems, 
+and is a better approximation the more the system resembles that scenario. Another factory built in a geographically distinct market with little overlap between customers
+and seperate workers for each factory should follow this approximation very well. </p>
+<!--end content-->
+</div>
+<!--begin comments--><div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+var disqus_config = function () {
+this.page.url = "https://connornm777.github.io/marginalism.html";;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "marginalism"; // Replace $marginalism$ with page's unique identifier variable
+}; 
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://connornm777-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//connornm777-github-io.disqus.com/count.js" async></script>
+<!--end comments-->
+</body>
+</html>
+

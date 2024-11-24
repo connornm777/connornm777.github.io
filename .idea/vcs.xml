@@ -2,5 +2,17 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/BT3-Flat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/Flex" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/MinimalXY" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/Papyrus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/Responsive-Pelican" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/alchemy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/apricot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/attila" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/blue-penguin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/blue-penguin-dark" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/bluegrasshopper" vcs="Git" />
   </component>
 </project>
