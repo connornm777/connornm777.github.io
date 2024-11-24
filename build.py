@@ -49,7 +49,7 @@ for post in posts:
     output_file = OUTPUT_DIR / post["slug"]
     
     # Populate the template
-    page_content = template.replace("<!--menu-->", f"<ul>{menu_items}</ul>")
+    page_content = template.replace("<!--menu-->", f"<ul class='menu'>{menu_items}</ul>")
     page_content = page_content.replace("<!--content-->", post["content"])
     
     # Disqus variables

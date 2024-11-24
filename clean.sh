@@ -1,1 +1,0 @@
-rm -rf website/html/*
