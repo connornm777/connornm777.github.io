@@ -1,0 +1,2 @@
+make publish
+make github
