@@ -7,13 +7,17 @@ from datetime import datetime
 # Directories
 SRC_DIR = Path("src")
 OUTPUT_DIR = Path("website/html")
-TEMPLATE_FILE = Path("templates/example.html")
+TEMPLATE_ARTICLE = Path("templates/article.html")
+TEMPLATE_HOMEPAGE = Path("templates/homepage.html")
 
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-# Load the HTML template
-with TEMPLATE_FILE.open("r", encoding="utf-8") as f:
-    template = f.read()
+# Load the templates
+with TEMPLATE_ARTICLE.open("r", encoding="utf-8") as f:
+    article_template = f.read()
+
+with TEMPLATE_HOMEPAGE.open("r", encoding="utf-8") as f:
+    homepage_template = f.read()
 
 # Parse Markdown with metadata
 def parse_markdown(md_file):
@@ -39,25 +43,40 @@ for md_file in SRC_DIR.glob("*.md"):
 # Sort posts by date
 posts.sort(key=lambda x: x["date"], reverse=True)
 
-# Generate dynamic menu
-menu_items = "\n".join(
-    f'<li><a href="{post["slug"]}">{post["title"]}</a></li>' for post in posts
-)
-
-# Generate HTML pages
-for post in posts:
+# Generate HTML for each post
+for i, post in enumerate(posts):
     output_file = OUTPUT_DIR / post["slug"]
-    
-    # Populate the template
-    page_content = template.replace("<!--menu-->", f"<ul class='menu'>{menu_items}</ul>")
+
+    # Determine navigation
+    prev_link = (
+        f'<a href="{posts[i-1]["slug"]}">&larr; {posts[i-1]["title"]}</a>' if i > 0 else ""
+    )
+    next_link = (
+        f'<a href="{posts[i+1]["slug"]}">{posts[i+1]["title"]} &rarr;</a>'
+        if i < len(posts) - 1
+        else ""
+    )
+    nav_links = f"{prev_link} | <a href='home.html'>Back to Homepage</a> | {next_link}"
+
+    # Populate the article template
+    page_content = article_template.replace("<!--menu-->", nav_links)
     page_content = page_content.replace("<!--content-->", post["content"])
-    
+
     # Disqus variables
     page_content = page_content.replace("example.html", post["slug"])
     page_content = page_content.replace("example", post["slug"].replace(".html", ""))
-    
+
     with output_file.open("w", encoding="utf-8") as f:
         f.write(page_content)
 
+# Generate the homepage
+homepage_links = "\n".join(
+    f'<li><a href="{post["slug"]}">{post["title"]}</a> - {post["date"].strftime("%Y-%m-%d")}</li>'
+    for post in posts
+)
+homepage_content = homepage_template.replace("<!--menu-->", f"<ul>{homepage_links}</ul>")
+
+with (OUTPUT_DIR / "home.html").open("w", encoding="utf-8") as f:
+    f.write(homepage_content)
 
 print("Site built successfully!")

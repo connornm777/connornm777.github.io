@@ -1,7 +1,5 @@
 ---
 title: "Title"
-tags: ["butts", "wow"]
-categories: ["idk"]
 date: '2012-01-01'
 ---
 
