@@ -1,7 +1,7 @@
 ---
 title: "An Honest Living"
-category: "Fiction"
-number: 1
+tags: ["fiction", "futurism"]
+number: 2
 ---
 
 The 
