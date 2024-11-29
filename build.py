@@ -37,11 +37,11 @@ for md_file in SRC_DIR.glob("*.md"):
     metadata, html_content = parse_markdown(md_file)
     metadata["content"] = html_content
     metadata["slug"] = f"{md_file.stem}.html"
-    metadata["date"] = datetime.strptime(metadata["date"], "%Y-%m-%d")
+    metadata["number"] = int(metadata["number"])
     posts.append(metadata)
 
 # Sort posts by date
-posts.sort(key=lambda x: x["date"], reverse=True)
+posts.sort(key=lambda x: x["number"])
 
 # Generate HTML for each post
 for i, post in enumerate(posts):
@@ -71,7 +71,7 @@ for i, post in enumerate(posts):
 
 # Generate the homepage
 homepage_links = "\n".join(
-    f'<li><a href="{post["slug"]}">{post["title"]}</a> - {post["date"].strftime("%Y-%m-%d")}</li>'
+    f'<li><a href="{post["slug"]}">{post["title"]}</a></li>'
     for post in posts
 )
 homepage_content = homepage_template.replace("<!--menu-->", f"<ul>{homepage_links}</ul>")

@@ -1,6 +1,6 @@
 ---
 title: "Test"
-date: '2012-01-01'
+number: 2
 ---
 
 
