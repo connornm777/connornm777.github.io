@@ -4,5 +4,8 @@ tags: ["fiction", "futurism"]
 number: 2
 ---
 
-The 
-
+| Month    | Savings |
+| -------- | ------- |
+| January  | $250    |
+| February | $80     |
+| March    | $420    |

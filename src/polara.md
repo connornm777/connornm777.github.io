@@ -35,46 +35,69 @@ All current research bases and scientists will be allowed to continue operations
 
 ### Layers of Government
   
-- Citizen
+- Citizenry (~100 million)
+    - Prerequisite: Human beings
+    - Selection: All are welcome
+    - Duties: 
+        - Compliance with Polarian law
 
-  - Occupants: Human beings
-  - Selection: Anyone who wants to be one
-  - Term: Life
-  - Duties: Compliance with Polaraian law
+- Collective (~5 million) 
+    - Prerequisite: Citizen of Polara
+    - Selection: Completion of 3 year training process 
+    - Duties:
+    	- Loyalty to Polara
+    	- Biological mental enhancement
+    	- Service according to one's aptitude
+    	- Neutrality and abstention from participation in foreign political affairs
+        - Electing members of the council
 
-- Collective 
+- Assembly (7919)
+    - Prerequisite: Member of the citizenry for at least 5 years
+    - Selection: Random from among eligible members of the citizenry
+    - Term: 7 years
+    - Duties: 
+    	- Represent the will of the citizens
+    	- Vote on laws pertaining to human-human affairs
+    	- Foreign relations and conflict management
+    	- Read the overmind's classified intelligence reports
+    
 
-  - Occupants: Citizens of Polara
-  - Selection: Completion of 2 year training process 
-  - Term: Life
-  - Duties:
-
-    -  
-
-- Assembly (1000)
-
-  - Occupants: Members of the collective
-  - Selection: Random, with probability weighted by time spent in service of the collective
-  - Term: 5 years 
-  - Duties:   
-
-- Elders (10)
-
-  - Occupants: Former members of the assembly
-  - Selection: Random, with probability weighted by approval rating as the member of the assembly
-  - Term: Life
-  - Duties: 
- 
-- Executor (1) 
-
-  - Occupant: Polarian overmind
-  - Term: Indefinite
-  - Duties:
-
-    - Supreme command of the armed forces
-    - Central repository of intelligence
-    - Oversight of critical infrastructure 
-    - Enforcement of supreme laws
-    - Enforcement of laws set by the assembly 
-
+- Council (541)
+    - Prerequisite: Member of the collective
+    - Selection: Elected from members of the collective 
+    - Term: 11 years
+    - Duties: 
+        - Represent the will of the collective
+        - Vote on laws pertaining to human-machine affairs  
+        - Management of fiscal and economic policy
+        - Calculation of federal taxes and credits
+  
+- Ministry (29)
+    - Prerequisite: Member of the collective
+    - Selection: Chosen by the Polarian overmind
+    - Term: 13 years
+    - Duties:
+        - Represent the will of the overmind 
+        - Vote on laws pertaining to machine-machine or machine-nature affairs 
+        - Temporary neuro-chip mental uplift to interpret the overmind's thoughts
+        - Make rulings in the Polarian high court
    
+- Executor (1) 
+    - Occupant: Polarian overmind
+    - Term: 1001 years
+    - Duties:
+        - Commander of the armed forces
+        - Central repository of intelligence
+        - Oversight of critical infrastructure 
+        - Enforcement of supreme laws
+        - Enforcement of laws set by the assembly or council
+    
+### Electoral Process 
+
+- Every 7 years the assembly is dissolved, and replaced by a new assembly drawn randomly from all citizens
+    - Membership is optional, those who do wish to be in the assembly may decline and be replaced by another random citizen
+    - Members of previous assemblies are still eligible to serve in the new assemblies
+    - Members of the collective are also citizens and may serve in the assembly 
+    - Current serving members of the ministry or the council are ineligible to hold two offices and must either decline the selection or resign their positon
+
+- Every 11 years the council is dissolved, and replaced by a new council selected by approval voting
