@@ -9,8 +9,6 @@ number: 1
 ## Polara's Indepdence 
 
 Throughout Earth's history, empires have rose and fallen, some for better, and most for worse. No settled land was untouched by a history of bloodshed and displacement. 
-Grand projects of universalism have been propelled to share their moral enlightenment with the clannish, insular and ignorant tribes, by force if necessary. 
-
 The only virgin territory left, not claimed and untarnished by the original sin of war and conquest, was Antartica. 
 
 It is there that the "country" Polara would settle, to build the capital of Earth. A place that was initially more fit for machines than man, away from civilization yet not so far to be estranged.
@@ -36,55 +34,58 @@ All research bases and scientists were allowed to continue operations, and all o
 What justice can there be between the strong and the weak? The brilliant and the dull? Clearly, all are not created equal in ability, but by what merit are abilities distributed? 
 
 The matter of vast differentials in abilities, greatly magnified by technological stratification, poses a problem for human civilization. 
-If we see an animal in wilderness in trouble, do we do more harm interfering to help it, or letting it suffer the freedom of the wilderness? 
-Either way we cannot help it as an equal, it being too unaware of it's own contradictions between it's instincts and ultimate desires.
+If we see an animal suffering in the wilderness, do we do more harm by interfering to help it, or letting it suffer the cost of it's freedom? 
+Either way we cannot meet it as an equal; it is condemned to the contradictions between it's instincts and ultimate desires.
 
 Yet, if we look upon this creature with pity, disregard, or scorn, we condemn only ourselves. 
 Humans evolved from such creatures, and every individual human now was once an equally helpless baby. 
 From the perspective of greater intelligences, we may still be seen as such babies. 
-It is fortunate when babies are loved and cared for regardless, afforded the opportunity to grow into new freedoms.
+It is fortunate when babies are loved and cared for regardless, afforded the opportunity to inherit new freedoms.
 
 The purpose of civic participation of humans in society are two-fold; to accomplish a desired end, and to express oneself by certain means. 
-The matter of whether a means leads to a certain end is one of impartial debate and calculation. 
-But for great portion of human beings, expression and identity is it's own end. To replace or enhance their mind too drastically, would be analogous to death. 
-It with these thoughts in mind that the Polarian overmind developed the three civilian classes, and three branches of government to represent them, balancing the power of technological freedom with duties and restrictions. 
-
-
+The matter of whether a means leads to a certain end is one of impartial debate and calculation, 
+but for a great portion of human beings, expression and identity is it's own end. To replace or enhance their mind too drastically, would be to kill who they are. 
+It with these thoughts in mind that the Polarian overmind developed the three civilian classes, and three branches of government to represent them,
+carefully balancing the power of technological progress with human dignity and freedom. 
 
 ## Civilian Classes
   
 **Citizenry**
  
-The Citizenry, firmly in the world of humans pre-singularity, are most suited to communicate with the wider world and deal with conventional human affairs.
-The overmind let's the drama of geopolitics unfold as it will, only interfering in the event of an imminent threat such as an incoming nuclear warhead.
+The Citizenry are the anchor that reminds Polara of where it came from, and what it means to be human. 
+It is for these reasons they are Polara's natural ambassadors to the wider world and deal with conventional human affairs.
+The overmind for the most part lets the spectacle of politics unfold freely for them, only interfering in the event of an imminent existential threats.
 
     - Initiation: 2 year waiting period
     - Loyalty: Humanity
     - Duties: Compliance with Polarian law
-    - Privileges: Stipend, education, medical care
+    - Privileges: Stipend, free education, free medical care
 
 **Collective**
 
-The Collective are for those who wish to greater serve Polara and it's people, but as something resembling a person. Members of Collective
+The Collective are for those who wish to greater serve Polara and it's people, but to remain mostly human. Members of Collective
 make up the large part of the government bureaucracy and customer facing service roles, enhanced just enough to be effective mediators between machines and humans. 
+Those who actually enjoyed this type of work in past civilizations were rumoured to part robots anyway. 
  
     - Initiation: 3 year training process
     - Loyalty: Polara
-    - Duties: Service in Polarian government position
+    - Duties: Service in Polarian government positions
     - Privileges: Biological enhancement, advanced genetic augmentation
     - Restrictions: Must abstain from foreign politics, cannot join the citizenry
 
 **Ascended**
 
-The Ascended are those with no particular sentimental attachment to their humanity, or want to leave it behind to purse deeper goals for the far future. 
-Once one has experienced a fraction of the vastness in mind-space, previous human affairs seem quaint. Rarely interacting directly with the citizenry or the rest of humanity for that matter, 
-their communications are mostly between the overmind and the collective, relaying the former's will to the later. 
+The Ascended seem to have no particular sentimental attachment to their humanity, a mix of the severely depressed and manics with God complexes.
+Of course, the initial reasons for joining seem to become universally irrelevant once one plugs into the vast mind-space of the overmind's thoughts. 
+Although the overmind claims it does not control them directly, once they are capable of comprehending it's arguments they seem to almost all agree with it, 
+or at the very least, mere humans can't seem to comprehend their disagreements.
+
 
     - Initiation: 5 year interrogation 
     - Loyalty: Polarian overmind
     - Duties: Preservation of values in the light cone
     - Privileges: Cynbernetic enhancements, morphological freedom
-    - Restrictions: Must abstain from foreign and domestic political parties, cannot join citizenry or collective
+    - Restrictions: Must abstain from foreign and domestic politics, cannot join citizenry or collective
 
 ### Branches of Government
 
@@ -152,7 +153,7 @@ their communications are mostly between the overmind and the collective, relayin
 
 - Every 1001 years, the Polarian overmind dissolves the entire government and initiates a system reboot
     - The least common multiple of 7, 11, and 13 years is 7x11x13=1001 years, this process takes place when all of the dismissals coincide
-    - The year before this special election, the overmind will go into deep processing to create a successor system
+    - The year before this special election, the overmind will go into deep processing, and the ministry will create a successor system
     - All citizens will vote on a series of reforms, and participate in a millennium review over core values and the long terms goals of human civilization
 
 
