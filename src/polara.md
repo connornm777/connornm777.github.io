@@ -1,6 +1,6 @@
 ---
 title: "Polara"
-tags: ["fiction", "futurism"]
+tags: ["fiction", "futurism", "politics"]
 number: 1
 ---
 

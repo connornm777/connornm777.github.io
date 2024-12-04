@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import markdown
 import yaml
-from datetime import datetime
+from collections import defaultdict
 
 # Directories
 SRC_DIR = Path("src")
@@ -10,7 +10,7 @@ OUTPUT_DIR = Path("html")
 TEMPLATE_ARTICLE = Path("templates/article.html")
 TEMPLATE_HOMEPAGE = Path("templates/homepage.html")
 
-OUTPUT_DIR.mkdir(exist_ok=True)
+OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
 
 # Load the templates
 with TEMPLATE_ARTICLE.open("r", encoding="utf-8") as f:
@@ -33,48 +33,51 @@ def parse_markdown(md_file):
 
 # Collect all Markdown files and metadata
 posts = []
+tags = defaultdict(list)  # To organize posts by tags
+
 for md_file in SRC_DIR.glob("*.md"):
     metadata, html_content = parse_markdown(md_file)
     metadata["content"] = html_content
     metadata["slug"] = f"{md_file.stem}.html"
-    metadata["number"] = int(metadata["number"])
+    metadata["tags"] = metadata.get("tags", [])
     posts.append(metadata)
 
-# Sort posts by date
-posts.sort(key=lambda x: x["number"])
+    # Organize posts by tags
+    for tag in metadata["tags"]:
+        tags[tag].append(metadata)
 
 # Generate HTML for each post
-for i, post in enumerate(posts):
+for post in posts:
     output_file = OUTPUT_DIR / post["slug"]
 
-    # Determine navigation
-    prev_link = (
-        f'<a href="{posts[i-1]["slug"]}">&larr; {posts[i-1]["title"]}</a>' if i > 0 else ""
-    )
-    next_link = (
-        f'<a href="{posts[i+1]["slug"]}">{posts[i+1]["title"]} &rarr;</a>'
-        if i < len(posts) - 1
-        else ""
-    )
-    nav_links = f"{prev_link} | <a href='home.html'>Back to Homepage</a> | {next_link}"
+    # Generate tag links
+    tag_links = " | ".join(tag.title() for tag in post["tags"])
+    header_links = f'<a href="home.html">Homepage</a> | {tag_links}'
 
     # Populate the article template
-    page_content = article_template.replace("<!--menu-->", nav_links)
+    page_content = article_template.replace("<!--header-->", header_links)
     page_content = page_content.replace("<!--content-->", post["content"])
 
     # Disqus variables
     page_content = page_content.replace("example.html", post["slug"])
     page_content = page_content.replace("example", post["slug"].replace(".html", ""))
 
+    # Write the output file
     with output_file.open("w", encoding="utf-8") as f:
         f.write(page_content)
 
-# Generate the homepage
-homepage_links = "\n".join(
-    f'<li><a href="{post["slug"]}">{post["title"]}</a></li>'
-    for post in posts
+# Generate the homepage grouped by tags
+tag_menus = "\n".join(
+    f'<div class="tag-menu"><h2>{tag.title()}</h2><ul>' +
+    "".join(
+        f'<li><a href="{post["slug"]}">{post["title"]}</a></li>'
+        for post in sorted(posts, key=lambda x: x["slug"])
+    ) +
+    "</ul></div>"
+    for tag, posts in tags.items()
 )
-homepage_content = homepage_template.replace("<!--menu-->", f"<ul>{homepage_links}</ul>")
+
+homepage_content = homepage_template.replace("<!--menu-->", f"<div class='tag-container'>{tag_menus}</div>")
 
 with (OUTPUT_DIR / "home.html").open("w", encoding="utf-8") as f:
     f.write(homepage_content)
