@@ -18,6 +18,12 @@ nav {
     font-family: Computer Modern Sans, monospace;
 }
 
+img {
+  margin:auto;
+  display: block;
+}
+
+
 .menu {
     list-style: none;
     display: inline-flex;

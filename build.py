@@ -6,7 +6,7 @@ from datetime import datetime
 
 # Directories
 SRC_DIR = Path("src")
-OUTPUT_DIR = Path("website/html")
+OUTPUT_DIR = Path("html")
 TEMPLATE_ARTICLE = Path("templates/article.html")
 TEMPLATE_HOMEPAGE = Path("templates/homepage.html")
 
