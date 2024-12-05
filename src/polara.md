@@ -16,6 +16,9 @@ The freezing temperatures cooled the millions of processors constituting the Pol
 Polara expertly navigated the geopolitical complications with past Antartic treaties, dangling patents and research as carrots and using black mail and political propaganda as sticks.
 All research bases and scientists were allowed to continue operations, and all other humans were free to immigrate and take refuge, in compliance with Polarian law. 
 
+![image](../images/polara/city.jpg)
+
+
 ## Supreme Laws 
 
 1. Laws that restrict the free movement of people to or from Polara, are prohibited
@@ -56,10 +59,10 @@ The Citizenry are the anchor that reminds Polara of where it came from, and what
 It is for these reasons they are Polara's natural ambassadors to the wider world and deal with conventional human affairs.
 The overmind for the most part lets the spectacle of politics unfold freely for them, only interfering in the event of an imminent existential threats.
 
-    - Initiation: 2 year waiting period
-    - Loyalty: Humanity
-    - Duties: Compliance with Polarian law
-    - Privileges: Stipend, free education, free medical care
+- Initiation: 2 year waiting period
+- Loyalty: Humanity
+- Duties: Compliance with Polarian law
+- Privileges: Stipend, free education, free medical care
 
 **Collective**
 
@@ -67,11 +70,11 @@ The Collective are for those who wish to greater serve Polara and it's people, b
 make up the large part of the government bureaucracy and customer facing service roles, enhanced just enough to be effective mediators between machines and humans. 
 Those who actually enjoyed this type of work in past civilizations were rumoured to part robots anyway. 
  
-    - Initiation: 3 year training process
-    - Loyalty: Polara
-    - Duties: Service in Polarian government positions
-    - Privileges: Biological enhancement, advanced genetic augmentation
-    - Restrictions: Must abstain from foreign politics, cannot join the citizenry
+- Initiation: 3 year training process
+- Loyalty: Polara
+- Duties: Service in Polarian government positions
+- Privileges: Biological enhancement, advanced genetic augmentation
+- Restrictions: Must abstain from foreign politics, cannot join the citizenry
 
 **Ascended**
 
@@ -81,59 +84,60 @@ Although the overmind claims it does not control them directly, once they are ca
 or at the very least, mere humans can't seem to comprehend their disagreements.
 
 
-    - Initiation: 5 year interrogation 
-    - Loyalty: Polarian overmind
-    - Duties: Preservation of values in the light cone
-    - Privileges: Cynbernetic enhancements, morphological freedom
-    - Restrictions: Must abstain from foreign and domestic politics, cannot join citizenry or collective
+- Initiation: 5 year interrogation 
+- Loyalty: Polarian overmind
+- Duties: Preservation of values in the light cone
+- Privileges: Cynbernetic enhancements, morphological freedom
+- Restrictions: Must abstain from foreign and domestic politics, cannot join citizenry or collective
 
 ### Branches of Government
 
 **Assembly**
 
-    - Members: 7919
-    - Prerequisite: Citizen
-    - Selection: Random from among eligible members of the citizenry
-    - Term: 7 years
-    - Duties: 
-        - Represent the will of the citizens
-        - Vote on laws pertaining to human-human affairs
-        - Foreign relations and conflict management 
+- Members: 7919
+- Prerequisite: Citizen
+- Selection: Random from among eligible members of the citizenry
+- Term: 7 years
+- Duties: 
+    - Represent the will of the citizens
+    - Vote on laws pertaining to human-human affairs
+    - Foreign relations and conflict management 
 
 **Council**
  
-    - Members: 541
-    - Prerequisite: Member of the collective
-    - Selection: Elected from members of the collective 
-    - Term: 11 years
-    - Duties: 
-        - Represent the will of the collective
-        - Vote on laws pertaining to human-machine affairs  
-        - Management of fiscal and economic policy
+- Members: 541
+- Prerequisite: Member of the collective
+- Selection: Elected from members of the collective 
+- Term: 11 years
+- Duties: 
+    - Represent the will of the collective
+    - Vote on laws pertaining to human-machine affairs  
+    - Management of fiscal and economic policy
   
 **Ministry**
 
-    - Members: 29
-    - Prerequisite: Ascended
-    - Selection: Chosen by the Polarian overmind
-    - Term: 13 years
-    - Duties:
-        - Represent the will of the overmind 
-        - Vote on laws pertaining to machine-machine affairs 
-        - Make rulings in the Polarian high court
+- Members: 29
+- Prerequisite: Ascended
+- Selection: Chosen by the Polarian overmind
+- Term: 13 years
+- Duties:
+    - Represent the will of the overmind 
+    - Vote on laws pertaining to machine-machine affairs 
+    - Make rulings in the Polarian high court
    
 **Executor**
 
-    - Members: 1 
-    - Occupant: Polarian overmind
-    - Term: 1001 years
-    - Duties:
-        - Commander of the armed forces
-        - Central repository of intelligence
-        - Oversight of critical infrastructure 
-        - Enforcement of supreme laws
-        - Enforcement of laws set by the assembly or council
-    
+- Members: 1 
+- Occupant: Polarian overmind
+- Term: 1001 years
+- Duties:
+    - Commander of the armed forces
+    - Central repository of intelligence
+    - Oversight of critical infrastructure 
+    - Enforcement of supreme laws
+    - Enforcement of laws set by the assembly or council
+   
+![image](../images/polara/overmind.jpg) 
 ## Electoral Process 
 
 - Every 7 years the assembly is dissolved, and replaced by a new assembly drawn randomly from all citizens

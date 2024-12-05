@@ -19,8 +19,11 @@ nav {
 }
 
 img {
-  margin:auto;
-  display: block;
+    margin: auto;
+    display: block;
+    align-content: center;
+    max-width: 70%;
+    border: 5px solid black;
 }
 
 
@@ -45,7 +48,7 @@ img {
 }
 
 .content {
-    margin display: inline-block;
+    margin-display: inline-block;
     align: center;
     width: 80%;
     margin: auto;
