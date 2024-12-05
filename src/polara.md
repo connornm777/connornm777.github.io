@@ -16,7 +16,7 @@ The freezing temperatures cooled the millions of processors constituting the Pol
 Polara expertly navigated the geopolitical complications with past Antartic treaties, dangling patents and research as carrots and using black mail and political propaganda as sticks.
 All research bases and scientists were allowed to continue operations, and all other humans were free to immigrate and take refuge, in compliance with Polarian law. 
 
-![image](../images/polara/city.jpg)
+![image](/images/polara/city.jpg)
 
 
 ## Supreme Laws 
@@ -137,7 +137,7 @@ or at the very least, mere humans can't seem to comprehend their disagreements.
     - Enforcement of supreme laws
     - Enforcement of laws set by the assembly or council
    
-![image](../images/polara/overmind.jpg) 
+![image](/images/polara/overmind.jpg) 
 ## Electoral Process 
 
 - Every 7 years the assembly is dissolved, and replaced by a new assembly drawn randomly from all citizens
