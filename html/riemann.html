@@ -11,7 +11,7 @@
 </nav>
 <div class="content">
 <h1>Riemann Tensor</h1>
-<p><img alt="image" src="../images/riemann/abc.png" /></p>
+<p><img alt="image" class="img-med" src="../images/riemann/abc.png" /></p>
 <ul>
 <li>In flat space, each point can be identified with a position vector</li>
 <li>The position of a point given a position vector from another point is then just their sum</li>
@@ -21,60 +21,60 @@ can be indicated with a position vector originating from center point of the nei
 <li>The vector \(\delta \vec{u}\) points from point \(A\) to neighboring point \(B\)</li>
 <li>The vector \(\delta \vec{w}\) points from point \(A\) to neighboring point \(C\)</li>
 </ul>
-<p><img alt="image" src="../images/riemann/abc.png" /></p>
+<p><img alt="image" class="img-med" src="../images/riemann/abc.png" /></p>
 <ul>
 <li>Vector \(\delta \vec{u}\) at point \(C\), locates the neighboring point \(D\)</li>
 <li>Vector \(\delta \vec{w}\) at point \(B\), locates the neighboring point \(E\)</li>
 <li>\(E\) close to \(B\), \(D\) close to \(C\), \(B\) and \(C\) close to \(A\)</li>
 <li>\(E\) and \(D\) NOT close to \(A\), cannot uniquely identify with a position vector from \(A\) to \(E\) and \(D\)</li>
 </ul>
-<p><img alt="image" src="../images/riemann/abcde.png" /></p>
+<p><img alt="image" class="img-med" src="../images/riemann/abcde.png" /></p>
 <ul>
 <li>\(\delta\vec{w}\) and \(\delta\vec{u}\) are treated as close enough to be locally flat and indicate positions around \(A\)</li>
 <li>Their sum \(\delta\vec{w}+\delta\vec{u}\) is long enough to need corrections, and does not uniquely identify a point in space</li>
 <li>In general for curved space, the points \(D\) and \(E\) do not coincide</li>
 </ul>
-<p><img alt="image" src="../images/riemann/abcde.png" /></p>
+<p><img alt="image" class="img-med" src="../images/riemann/abcde.png" /></p>
 <ul>
 <li>Instead of adding vectors like we would in flat space, we may parallel transport \(\delta\vec{w}\) along \(\delta\vec{u}\)  resulting in 
 the vector \(\delta \vec{w}^{\prime}\) at point \(B\) and vice versa for \(\delta\vec{u}^{\prime}\) at point \(C\).</li>
 <li>This compensates for the curvature of space and identifies a unique point in space \(F\) independent of order IF 
 space is torsionless</li>
 </ul>
-<p><img alt="image" src="../images/riemann/abcdef.png" /></p>
+<p><img alt="image" class="img-med" src="../images/riemann/abcdef.png" /></p>
 <ul>
 <li>If there is torsion, even \(\delta\vec{u}^{\prime}\) and \(\delta\vec{w}^{\prime}\) do not coincide to the same point</li>
 </ul>
-<p><img alt="image" src="../images/riemann/abcdegh.png" /></p>
+<p><img alt="image" class="img-med" src="../images/riemann/abcdegh.png" /></p>
 <ul>
 <li>For infinitesimal vectors, we only require the lowest order correction of parallel transport, the gradient of the vector</li>
 </ul>
 <p>$$\delta\vec{u}^{\prime}=\delta\vec{u}+\nabla_{{\delta\vec{w}}}\delta\vec{u}$$</p>
 <p>$$\delta\vec{w}^{\prime}=\delta\vec{w}+\nabla_{{\delta\vec{u}}}\delta\vec{w}$$</p>
-<p><img alt="image" src="../images/riemann/abcf.png" /></p>
+<p><img alt="image" class="img-med" src="../images/riemann/abcf.png" /></p>
 <ul>
 <li>These two paths correspond to the same point \(F\), they do NOT correspond to the same tangent space AT \(F\). </li>
 <li>We can transport another vector \(\vec{v}\) on the path \(ABF\), and the path \(ACF\) and compare the difference at point \(F\)</li>
 </ul>
-<p><img alt="image" src="../images/riemann/abcfdv.png" /></p>
-<p>$$\vec{v}<em>{AC}=\vec{v}+\nabla</em>{\delta \vec{w}}\vec{v}$$</p>
-<p>$$\vec{v}<em>{AC}=\vec{v}+\nabla</em>{\delta \vec{w}}\vec{v}$$</p>
+<p><img alt="image" class="img-med" src="../images/riemann/abcfdv.png" /></p>
+<p>$$\vec{v}{AC}=\vec{v}+\nabla{\delta \vec{w}}\vec{v}$$</p>
+<p>$$\vec{v}<em _delta="\delta" _vec_w="\vec{w">{AC}=\vec{v}+\nabla</em>$$}}\vec{v</p>
 <p>$$
-\vec{v}<em>{ACF}=\vec{v}</em>{AC}+\nabla_{\delta \vec{u}^{\prime}}\vec{v}_{AC}\
+\vec{v}<em AC="AC">{ACF}=\vec{v}</em>\
+$$}+\nabla_{\delta \vec{u}^{\prime}}\vec{v}_{AC</p>
+<p>$$
+\vec{v}<em _delta="\delta" _vec_u="\vec{u">{AB}=\vec{v}+\nabla</em>\
+$$}}\vec{v</p>
+<p>$$
+\vec{v}<em AB="AB">{ABF}=\vec{v}</em>\
+$$}+\nabla_{\delta \vec{w}^{\prime}}\vec{v}_{AB</p>
+<p>$$
+\implies\delta\vec{v}=\vec{v}<em ACF="ACF">{ABF}-\vec{v}</em>\
 $$</p>
 <p>$$
-\vec{v}<em>{AB}=\vec{v}+\nabla</em>{\delta \vec{u}}\vec{v}\
-$$</p>
-<p>$$
-\vec{v}<em>{ABF}=\vec{v}</em>{AB}+\nabla_{\delta \vec{w}^{\prime}}\vec{v}_{AB}\
-$$</p>
-<p>$$
-\implies\delta\vec{v}=\vec{v}<em>{ABF}-\vec{v}</em>{ACF}\
-$$</p>
-<p>$$
-=\left(1+\nabla_{\delta\vec{w}^{\prime}}\right){\vec{v}}<em>{AB}
--\left(1+\nabla</em>{\delta\vec{u}^{\prime}}\right){\vec{v}}_{AC}\
-$$</p>
+=\left(1+\nabla_{\delta\vec{w}^{\prime}}\right){\vec{v}}<em _delta_vec_u="\delta\vec{u">{AB}
+-\left(1+\nabla</em>\
+$$}^{\prime}}\right){\vec{v}}_{AC</p>
 <p>$$
 =\left(1+\nabla_{\delta\vec{w}^{\prime}}\right)\left(1+\nabla_{\delta\vec{u}}\right)\vec{v}
 -\left(1+\nabla_{\delta\vec{u}^{\prime}}\right)\left(1+\nabla_{\delta\vec{w}}\right)\vec{v}\
@@ -140,7 +140,7 @@ $$</p>
 <p>$$
 \delta \vec{v} = R(\delta \vec{w}, \delta \vec{u}) \vec{v}
 $$</p>
-<p><img alt="image" src="../images/riemann/abcfdv.png" /></p>
+<p><img alt="image" class="img-med" src="../images/riemann/abcfdv.png" /></p>
 </div>
 <div id="disqus_thread"></div>
 <script>

@@ -27,9 +27,11 @@ def parse_markdown(md_file):
     if content.startswith("---"):
         front_matter, body = content.split("---", 2)[1:]
         metadata = yaml.safe_load(front_matter)
-        html_content = markdown.markdown(body)
+        # Enable 'attr_list' extension using the full path
+        html_content = markdown.markdown(body, extensions=['markdown.extensions.attr_list'])
         return metadata, html_content
-    return {}, markdown.markdown(content)
+    return {}, markdown.markdown(content, extensions=['markdown.extensions.attr_list'])
+
 
 # Collect all Markdown files and metadata
 posts = []

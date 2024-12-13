@@ -6,7 +6,7 @@ number: 2
 
 # Riemann Tensor
 
-![image](../images/riemann/abc.png)
+![image](../images/riemann/abc.png){.img-med}
 
 - In flat space, each point can be identified with a position vector
 - The position of a point given a position vector from another point is then just their sum
@@ -17,7 +17,7 @@ can be indicated with a position vector originating from center point of the nei
 - The vector \\(\delta \vec{w}\\) points from point \\(A\\) to neighboring point \\(C\\)
 
 
-![image](../images/riemann/abc.png)
+![image](../images/riemann/abc.png){.img-med}
 
 - Vector \\(\delta \vec{u}\\) at point \\(C\\), locates the neighboring point \\(D\\)
 - Vector \\(\delta \vec{w}\\) at point \\(B\\), locates the neighboring point \\(E\\)
@@ -25,25 +25,25 @@ can be indicated with a position vector originating from center point of the nei
 - \\(E\\) and \\(D\\) NOT close to \\(A\\), cannot uniquely identify with a position vector from \\(A\\) to \\(E\\) and \\(D\\)
 
 
-![image](../images/riemann/abcde.png)
+![image](../images/riemann/abcde.png){.img-med}
 
 
 - \\(\delta\vec{w}\\) and \\(\delta\vec{u}\\) are treated as close enough to be locally flat and indicate positions around \\(A\\)
 - Their sum \\(\delta\vec{w}+\delta\vec{u}\\) is long enough to need corrections, and does not uniquely identify a point in space
 - In general for curved space, the points \\(D\\) and \\(E\\) do not coincide
 
-![image](../images/riemann/abcde.png)
+![image](../images/riemann/abcde.png){.img-med}
 
 - Instead of adding vectors like we would in flat space, we may parallel transport \\(\delta\vec{w}\\) along \\(\delta\vec{u}\\)  resulting in 
 the vector \\(\delta \vec{w}^{\prime}\\) at point \\(B\\) and vice versa for \\(\delta\vec{u}^{\prime}\\) at point \\(C\\).
 - This compensates for the curvature of space and identifies a unique point in space \\(F\\) independent of order IF 
 space is torsionless
 
-![image](../images/riemann/abcdef.png)
+![image](../images/riemann/abcdef.png){.img-med}
 
 - If there is torsion, even \\(\delta\vec{u}^{\prime}\\) and \\(\delta\vec{w}^{\prime}\\) do not coincide to the same point
 
-![image](../images/riemann/abcdegh.png)
+![image](../images/riemann/abcdegh.png){.img-med}
 
 - For infinitesimal vectors, we only require the lowest order correction of parallel transport, the gradient of the vector
 
@@ -51,16 +51,16 @@ $$\delta\vec{u}^{\prime}=\delta\vec{u}+\nabla_{{\delta\vec{w}}}\delta\vec{u}$$
 
 $$\delta\vec{w}^{\prime}=\delta\vec{w}+\nabla_{{\delta\vec{u}}}\delta\vec{w}$$
 
-![image](../images/riemann/abcf.png)
+![image](../images/riemann/abcf.png){.img-med}
 
 
 - These two paths correspond to the same point \\(F\\), they do NOT correspond to the same tangent space AT \\(F\\). 
 - We can transport another vector \\(\vec{v}\\) on the path \\(ABF\\), and the path \\(ACF\\) and compare the difference at point \\(F\\)
 
 
-![image](../images/riemann/abcfdv.png)
+![image](../images/riemann/abcfdv.png){.img-med}
 
-$$\vec{v}_{AC}=\vec{v}+\nabla_{\delta \vec{w}}\vec{v}$$
+$$\vec{v}{AC}=\vec{v}+\nabla{\delta \vec{w}}\vec{v}$$
 
 $$\vec{v}_{AC}=\vec{v}+\nabla_{\delta \vec{w}}\vec{v}$$
 
@@ -171,6 +171,6 @@ $$
 \delta \vec{v} = R(\delta \vec{w}, \delta \vec{u}) \vec{v}
 $$
 
-![image](../images/riemann/abcfdv.png)
+![image](../images/riemann/abcfdv.png){.img-med}
 
 
