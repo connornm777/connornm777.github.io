@@ -28,6 +28,14 @@ img {
     border: 5px solid black;
 }
 
+.big-img{
+	display: block;
+	margin: auto;
+	max-width 20%;
+	border: 5px solid black;
+
+}
+
 .menu {
     list-style: none;
     display: inline-flex;
