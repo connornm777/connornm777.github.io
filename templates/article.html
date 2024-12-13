@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="/css/style.css" rel="stylesheet">
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    
+    <!-- MathJax v3 Configuration -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']],  // Enable single $ for inline math
+          displayMath: [['$$', '$$']],  // Enable $$ for display math
+          processEscapes: true  // Allows escaping dollar signs
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </head>
 <body>
 <nav>
