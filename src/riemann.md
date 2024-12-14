@@ -25,7 +25,7 @@ can be indicated with a position vector originating from another point that is c
 
 - Vector $\delta \vec{u}$ at point $C$, locates the neighboring point $D$
 - Vector $\delta \vec{w}$ at point $B$, locates the neighboring point $E$
-- $E$ close to $B$, $D$ close to $C$, $B$ and $C$ close to $A$
+- $E$ is close to $B$, $D$ is close to $C$, $B$ and $C$ are both close to $A$
 - $E$ and $D$ are NOT close to $A$, and cannot be uniquely identified with a position vector from $A$ to $E$ or $D$
 
 
