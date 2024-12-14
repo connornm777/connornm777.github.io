@@ -100,7 +100,7 @@ $$
 ---
 
 The Riemann tensor is defined by $\delta \vec{v}=R(\delta \vec{w}, \delta \vec{u})\vec{v}$.
-We can calculate it up to the lowest surviving order.
+We can calculate it up to the lowest surviving order ($\nabla_{\vec{a}+\vec{b}}=\nabla_{\vec{a}}+\nabla_{\vec{b}}$):
 
 $$
 \implies R(\delta \vec{w}, \delta \vec{u})=\left(1+\nabla_{\delta\vec{w}^{\prime}}\right)\left(1+\nabla_{\delta\vec{u}}\right)
@@ -119,12 +119,6 @@ $$
 $$
 \approx\nabla_{\delta\vec{w}}\nabla_{\delta\vec{u}}-\nabla_{\delta\vec{u}}\nabla_{\delta\vec{w}}
 +\nabla_{\nabla_{\delta \vec{u}}\delta\vec{w}}-\nabla_{\nabla_{\delta\vec{w}}\delta\vec{u}}
-$$
-
-$$
-\nabla_{\vec{a}+\vec{b}}=\nabla_{\vec{a}}+\nabla_{\vec{b}} 
-\implies R(\delta\vec{w}, \delta{u})=\nabla_{\delta\vec{w}}\nabla_{\delta\vec{u}}-\nabla_{\delta\vec{u}}\nabla_{\delta\vec{w}}
--\nabla_{\left(\nabla_{\delta\vec{w}}\delta\vec{u}-\nabla_{\delta\vec{u}}\delta\vec{w}\right)}
 $$
 
 The Lie bracket of two vectors yields another vector defined by $\vec{\mathcal{L}}(\vec{a}, \vec{b})=\nabla_{\vec{a}}\vec{b}-\nabla_{\vec{b}}\vec{a}$,
