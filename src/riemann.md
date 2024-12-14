@@ -46,24 +46,23 @@ can be indicated with a position vector originating from a point that is close b
 a vector $\delta \vec{w}^{\prime}$ at point $B$ and vice versa for $\delta\vec{u}^{\prime}$ at point $C$.
 - This compensates for the curvature of space and identifies a unique point in space $F$ independent of order IF 
 space is torsionless
-- In flat space, the point $F$ would just be identified with the position vector $\delta\vec{v}+\delta\vec{w}$
-- Instead for curved torsionless space, we have $\delta \vec{v} + \delta{w}^{\prime}=\delta \vec{w} + \delta{v}^{\prime}$
+- In flat space, the point $F$ would just be identified with the position vector $\delta\vec{u}+\delta\vec{w}$
+- Instead for curved torsionless space, we have $\delta \vec{u} + \delta{w}^{\prime}=\delta \vec{w} + \delta{u}^{\prime}$
 
 ![image](../images/riemann/abcdef.png){.img-med}
 
 ---
 
-- If there is torsion, even $\delta\vec{u}^{\prime}$ and $\delta\vec{w}^{\prime}$ do not coincide to the same point
+- If there is torsion, even $\delta \vec{w} +\delta\vec{u}^{\prime}$ and $\delta \vec{u} +\delta\vec{w}^{\prime}$ do not coincide to the same point
 
 ![image](../images/riemann/abcdegh.png){.img-med}
 
 ---
 
-- For infinitesimal vectors, we only require the lowest order correction of parallel transport, the gradient of the vector
+- For infinitesimal vectors, we only require the lowest order correction from parallel transport, the gradient along the transport path vector
 
-$$\delta\vec{u}^{\prime}=\delta\vec{u}+\nabla_{{\delta\vec{w}}}\delta\vec{u}$$
-
-$$\delta\vec{w}^{\prime}=\delta\vec{w}+\nabla_{{\delta\vec{u}}}\delta\vec{w}$$
+$$\delta\vec{u}^{\prime}=\delta\vec{u}+\nabla_{{\delta\vec{w}}}\delta\vec{u}\qquad
+\delta\vec{w}^{\prime}=\delta\vec{w}+\nabla_{{\delta\vec{u}}}\delta\vec{w}$$
 
 ![image](../images/riemann/abcf.png){.img-med}
 
@@ -77,33 +76,18 @@ $$\delta\vec{w}^{\prime}=\delta\vec{w}+\nabla_{{\delta\vec{u}}}\delta\vec{w}$$
 
 
 $$
-\vec{v}_{AC}=\vec{v}+\nabla_{\delta \vec{w}}\vec{v}
+\vec{v}_{AC}=\vec{v}+\nabla_{\delta \vec{w}}\vec{v} \qquad
+\vec{v}_{ACF}=\vec{v}_{AC}+\nabla_{\delta \vec{u}^{\prime}}\vec{v}_{AC}\qquad
+\vec{v}_{AB}=\vec{v}+\nabla_{\delta \vec{u}}\vec{v}\qquad
+\vec{v}_{ABF}=\vec{v}_{AB}+\nabla_{\delta \vec{w}^{\prime}}\vec{v}_{AB}
 $$
 
 $$
-\vec{v}_{ACF}=\vec{v}_{AC}+\nabla_{\delta \vec{u}^{\prime}}\vec{v}_{AC}\\
-$$
-
-$$
-\vec{v}_{AB}=\vec{v}+\nabla_{\delta \vec{u}}\vec{v}\\
-$$
-
-$$
-\vec{v}_{ABF}=\vec{v}_{AB}+\nabla_{\delta \vec{w}^{\prime}}\vec{v}_{AB}\\
-$$
-
-$$
-\implies\delta\vec{v}=\vec{v}_{ABF}-\vec{v}_{ACF}\\
-$$
-
-$$
+\implies\delta\vec{v}=\vec{v}_{ABF}-\vec{v}_{ACF}
 =\left(1+\nabla_{\delta\vec{w}^{\prime}}\right){\vec{v}}_{AB}
--\left(1+\nabla_{\delta\vec{u}^{\prime}}\right){\vec{v}}_{AC}\\
-$$
-
-$$
+-\left(1+\nabla_{\delta\vec{u}^{\prime}}\right){\vec{v}}_{AC}
 =\left(1+\nabla_{\delta\vec{w}^{\prime}}\right)\left(1+\nabla_{\delta\vec{u}}\right)\vec{v}
--\left(1+\nabla_{\delta\vec{u}^{\prime}}\right)\left(1+\nabla_{\delta\vec{w}}\right)\vec{v}\\
+-\left(1+\nabla_{\delta\vec{u}^{\prime}}\right)\left(1+\nabla_{\delta\vec{w}}\right)\vec{v}
 $$
 
 $$
@@ -115,60 +99,39 @@ $$
 
 ---
 
-The Riemann tensor is defined as:$\delta \vec{v}=R(\delta \vec{w}, \delta \vec{u})\vec{v}$.
-We find that the Riemann tensor's largest terms are second order in size of the infinitesimal transport vectors.
+The Riemann tensor is defined by $\delta \vec{v}=R(\delta \vec{w}, \delta \vec{u})\vec{v}$.
+We can calculate it's form up to the lowest surviving order.
 
 $$
 \implies R(\delta \vec{w}, \delta \vec{u})=\left(1+\nabla_{\delta\vec{w}^{\prime}}\right)\left(1+\nabla_{\delta\vec{u}}\right)
--\left(1+\nabla_{\delta\vec{u}^{\prime}}\right)\left(1+\nabla_{\delta\vec{w}}\right)\\
-$$
-
-$$
+-\left(1+\nabla_{\delta\vec{u}^{\prime}}\right)\left(1+\nabla_{\delta\vec{w}}\right)
 =\left(1+\nabla_{\delta\vec{w}+\nabla_{\delta\vec{u}}\delta\vec{w}}\right)\left(1+\nabla_{\delta\vec{u}}\right)
 -\left(1+\nabla_{\delta\vec{u}+\nabla_{\delta\vec{w}}\delta\vec{u}}\right)\left(1+\nabla_{\delta\vec{w}}\right)\\
 $$
 
 $$
-\nabla_{\vec{a}+\vec{b}}=\nabla_{\vec{a}}+\nabla_{\vec{b}} \\
-$$
-
-$$
-\implies R(\delta\vec{w}, \delta\vec{u})=
-\left(1+\nabla_{\delta\vec{w}}+\nabla_{\nabla_{\delta\vec{u}}\delta\vec{w}}\right)\left(1+\nabla_{\delta\vec{u}}\right)\\
--\left(1+\nabla_{\delta\vec{u}}+\nabla_{\nabla_{\delta\vec{w}}\delta\vec{u}}\right)\left(1+\nabla_{\delta\vec{w}}\right)\\
-$$
-
-$$
+=\left(1+\nabla_{\delta\vec{w}}+\nabla_{\nabla_{\delta\vec{u}}\delta\vec{w}}\right)\left(1+\nabla_{\delta\vec{u}}\right)\\
+-\left(1+\nabla_{\delta\vec{u}}+\nabla_{\nabla_{\delta\vec{w}}\delta\vec{u}}\right)\left(1+\nabla_{\delta\vec{w}}\right)
 =\nabla_{\delta\vec{w}}\nabla_{\delta\vec{u}}-\nabla_{\delta\vec{u}}\nabla_{\delta\vec{w}}
 +\nabla_{\nabla_{\delta \vec{u}}\delta\vec{w}}-\nabla_{\nabla_{\delta\vec{w}}\delta\vec{u}} + O(\delta^3)\\
 $$
 
 $$
-=\nabla_{\delta\vec{w}}\nabla_{\delta\vec{u}}-\nabla_{\delta\vec{u}}\nabla_{\delta\vec{w}}
+\approx\nabla_{\delta\vec{w}}\nabla_{\delta\vec{u}}-\nabla_{\delta\vec{u}}\nabla_{\delta\vec{w}}
 +\nabla_{\nabla_{\delta \vec{u}}\delta\vec{w}}-\nabla_{\nabla_{\delta\vec{w}}\delta\vec{u}}
 $$
 
 $$
-=\nabla_{\delta\vec{w}}\nabla_{\delta\vec{u}}-\nabla_{\delta\vec{u}}\nabla_{\delta\vec{w}}
--\nabla_{\left(\nabla_{\delta\vec{w}}\delta\vec{u}-\nabla_{\delta\vec{u}}\delta\vec{w}\right)}
-$$
-
-$$
+\nabla_{\vec{a}+\vec{b}}=\nabla_{\vec{a}}+\nabla_{\vec{b}} 
 \implies R(\delta\vec{w}, \delta{u})=\nabla_{\delta\vec{w}}\nabla_{\delta\vec{u}}-\nabla_{\delta\vec{u}}\nabla_{\delta\vec{w}}
 -\nabla_{\left(\nabla_{\delta\vec{w}}\delta\vec{u}-\nabla_{\delta\vec{u}}\delta\vec{w}\right)}
 $$
 
-The definition of the Lie bracket is given by:
+The Lie bracket of two vectors yields another vector defined by:
 
 $$
 \vec{\mathcal{L}}(\vec{a}, \vec{b})=\nabla_{\vec{a}}\vec{b}-\nabla_{\vec{b}}\vec{a}
 $$
-
-Which also yields a vector. 
-
----
-
-Finally, we have the expression for the Riemann curvature tensor:
 
 $$
 \implies \boxed{R(\delta\vec{w}, \delta\vec{u})
@@ -176,10 +139,6 @@ $$
 -\nabla_{\vec{\mathcal{L}}(\delta \vec{w}, \delta \vec{u})}}
 $$
 
-![image](../images/riemann/abcfdv.png){.img-med}
 
-$$
-\delta \vec{v} = R(\delta \vec{w}, \delta \vec{u}) \vec{v}
-$$
 
 
