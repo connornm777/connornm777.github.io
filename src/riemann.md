@@ -58,8 +58,8 @@ space is torsionless
 ![image](../images/riemann/abcdegh.png){.img-med}
 
 ---
-
-- For infinitesimal vectors, we only require the lowest order correction from parallel transport, the gradient along the transport path vector
+- We will assume no torsion
+- The lowest order correction from parallel transport is the gradient along the transport path vector
 
 $$\delta\vec{u}^{\prime}=\delta\vec{u}+\nabla_{{\delta\vec{w}}}\delta\vec{u}\qquad
 \delta\vec{w}^{\prime}=\delta\vec{w}+\nabla_{{\delta\vec{u}}}\delta\vec{w}$$
@@ -100,7 +100,7 @@ $$
 ---
 
 The Riemann tensor is defined by $\delta \vec{v}=R(\delta \vec{w}, \delta \vec{u})\vec{v}$.
-We can calculate it's form up to the lowest surviving order.
+We can calculate it up to the lowest surviving order.
 
 $$
 \implies R(\delta \vec{w}, \delta \vec{u})=\left(1+\nabla_{\delta\vec{w}^{\prime}}\right)\left(1+\nabla_{\delta\vec{u}}\right)
