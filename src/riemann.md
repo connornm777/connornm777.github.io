@@ -8,10 +8,10 @@ number: 2
 
 
 - In flat space, each point can be identified with a position vector
-- The position of a point given a position vector from another point is their sum
+- The position of a point given a position vector from another point is the sum of those position vectors
 - In curved space, we cannot identify points in space with position vectors 
-- However, each point in space can be treated as flat locally, so that only neighboring points (defined as those only some infinitesimal distance away)
-can be indicated with a position vector originating from a point that is close by
+- However, each point in space can be treated as flat locally, so that points
+can be indicated with a position vector originating from another point that is close by
 
 ---
 
