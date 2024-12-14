@@ -127,11 +127,8 @@ $$
 -\nabla_{\left(\nabla_{\delta\vec{w}}\delta\vec{u}-\nabla_{\delta\vec{u}}\delta\vec{w}\right)}
 $$
 
-The Lie bracket of two vectors yields another vector defined by:
-
-$$
-\vec{\mathcal{L}}(\vec{a}, \vec{b})=\nabla_{\vec{a}}\vec{b}-\nabla_{\vec{b}}\vec{a}
-$$
+The Lie bracket of two vectors yields another vector defined by $\vec{\mathcal{L}}(\vec{a}, \vec{b})=\nabla_{\vec{a}}\vec{b}-\nabla_{\vec{b}}\vec{a}$,
+giving us our final result:
 
 $$
 \implies \boxed{R(\delta\vec{w}, \delta\vec{u})
