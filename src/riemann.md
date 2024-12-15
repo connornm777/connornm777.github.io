@@ -43,9 +43,8 @@ can be indicated with a position vector originating from another point that is c
 ---
 
 - We may parallel transport $\delta\vec{w}$ along $\delta\vec{u}$ resulting in 
-a vector $\delta \vec{w}^{\prime}$ at point $B$ and vice versa for $\delta\vec{u}^{\prime}$ at point $C$.
-- This compensates for the curvature of space and identifies a unique point in space $F$ independent of order IF 
-space is torsionless
+a vector $\delta \vec{w}^{\prime}$ at point $B$, and parallel transport $\delta\vec{u}$ along $\delta\vec{w}$ resulting in $\delta\vec{u}^{\prime}$ at point $C$.
+- This identifies a unique point in space $F$ independent path only if space is torsionless
 - In flat space, the point $F$ would just be identified with the position vector $\delta\vec{u}+\delta\vec{w}$
 - Instead for curved torsionless space, we have $\delta \vec{u} + \delta{w}^{\prime}=\delta \vec{w} + \delta{u}^{\prime}$
 
