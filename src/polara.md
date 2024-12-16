@@ -48,7 +48,7 @@ It is fortunate when babies are loved and cared for regardless, afforded the opp
 The purpose of civic participation of humans in society are two-fold; to accomplish a desired end, and to express oneself by certain means. 
 The matter of whether a means leads to a certain end is one of impartial debate and calculation, 
 but for a great portion of human beings, expression and identity is it's own end. To replace or enhance their mind too drastically, would be to kill who they are. 
-It with these thoughts in mind that the Polarian overmind developed the three civilian classes, and three branches of government to represent them,
+It is with these thoughts in mind that the Polarian overmind developed the three civilian classes, and three branches of government to represent them,
 carefully balancing the power of technological progress with human dignity and freedom. 
 
 ## Civilian Classes
