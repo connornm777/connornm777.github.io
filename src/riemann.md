@@ -6,6 +6,8 @@ number: 2
 
 # Riemann Curvature Tensor
 
+---
+
 
 - In flat space, each point can be identified with a position vector
 - The position of a point given a position vector from another point is the sum of those position vectors

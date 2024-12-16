@@ -6,6 +6,8 @@ number: 1
 
 # Polara
 
+---
+
 ## Polara's Indepdence 
 
 Throughout Earth's history, empires have rose and fallen, some for better, and most for worse. No settled land was untouched by a history of bloodshed and displacement. 
@@ -18,6 +20,7 @@ All research bases and scientists were allowed to continue operations, and all o
 
 ![](/images/polara/city.jpg){.img-big}
 
+---
 
 ## Supreme Laws 
 
@@ -31,6 +34,7 @@ All research bases and scientists were allowed to continue operations, and all o
 
 5. All machine intelligences capable of autonomous self-improvement, with the exception of the Polarian overmind, are prohibited 
 
+---
 
 ## Philosophy of Polarian Government
 
@@ -50,6 +54,8 @@ The matter of whether a means leads to a certain end is one of impartial debate 
 but for a great portion of human beings, expression and identity is it's own end. To replace or enhance their mind too drastically, would be to kill who they are. 
 It is with these thoughts in mind that the Polarian overmind developed the three civilian classes, and three branches of government to represent them,
 carefully balancing the power of technological progress with human dignity and freedom. 
+
+---
 
 ## Civilian Classes
   
@@ -89,6 +95,8 @@ or at the very least, mere humans can't seem to comprehend their disagreements.
 - Duties: Preservation of values in the light cone
 - Privileges: Cynbernetic enhancements, morphological freedom
 - Restrictions: Must abstain from foreign and domestic politics, cannot join citizenry or collective
+
+---
 
 ### Branches of Government
 
@@ -138,6 +146,9 @@ or at the very least, mere humans can't seem to comprehend their disagreements.
     - Enforcement of laws set by the assembly or council
    
 ![image](/images/polara/overmind.jpg){.img-big}
+
+---
+
 ## Electoral Process 
 
 - Every 7 years the assembly is dissolved, and replaced by a new assembly drawn randomly from all citizens
