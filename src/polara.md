@@ -57,7 +57,7 @@ carefully balancing the power of technological progress with human dignity and f
  
 The Citizenry are the anchor that reminds Polara of where it came from, and what it means to be human. 
 It is for these reasons they are Polara's natural ambassadors to the wider world and deal with conventional human affairs.
-The overmind for the most part lets the spectacle of politics unfold freely for them, only interfering in the event of an imminent existential threats.
+The overmind for the most part lets the spectacle of politics unfold freely for them, only interfering in the event of imminent existential threats.
 
 - Initiation: 2 year waiting period
 - Loyalty: Humanity
